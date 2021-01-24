@@ -1,0 +1,103 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+body {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: 500px;
+  height: 500px;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  cursor: pointer;
+  background: url("images/trash.ico");
+  border: none;
+  width: 16px;
+  height: 16px;
+
+}
+
+.clicked {
+  color: #7f8c8d;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+h1, input, h4 {
+  width: 500px;
+  text-align: center;
+  margin: 20px;
+}
+
+h1{
+  height: 125px;
+  font-size: 125px;
+}
+
+h4{
+  font-size: 50px;
+  height: 50px;
+}
+
+ul {
+  list-style-type: disc;
+  text-align: left;
+  width: 400px;
+  position: absolute;
+  left: px;
+  font-size: 25px;
+}
+
+input {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+input::placeholder{
+  color: white;
+}
+
+.js-weather{
+  float: right;
+  margin: 20px;
+  font-weight: bold;
+}
